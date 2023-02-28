@@ -146,7 +146,6 @@ class MovieListCreateViewTest(APITestCase):
                 },
             ],
         }
-
         resulted_data = response.json()
         msg = (
             "\nVerifique se as informações do filme retornadas no POST "
