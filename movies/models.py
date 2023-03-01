@@ -3,11 +3,7 @@ from uuid import uuid4
 
 
 class Movie(models.Model):
-    id = models.UUIDField(
-        primary_key=True,
-        default=uuid4,
-        editable=False,
-    )
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     title = models.CharField(max_length=127)
     duration = models.DurationField()
     premiere = models.DateField()

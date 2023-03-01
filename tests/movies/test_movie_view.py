@@ -1,5 +1,4 @@
 from unittest.mock import MagicMock, patch
-import ipdb
 from rest_framework.test import APITestCase
 from rest_framework.views import status
 from movies.models import Movie
