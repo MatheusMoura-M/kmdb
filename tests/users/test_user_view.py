@@ -1,6 +1,5 @@
 from unittest.mock import MagicMock, patch
 
-import ipdb
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User as UserType
 from rest_framework.test import APITestCase
