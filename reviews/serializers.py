@@ -21,10 +21,10 @@ class ReviewSerializer(serializers.ModelSerializer):
             "stars",
             "review",
             "spoilers",
-            "movie",
+            "movie_id",
             "critic",
         ]
-        read_only_fields = ["id", "movie", "critic"]
+        read_only_fields = ["id", "movie_id", "critic"]
 
     def create(self, validated_data):
         return Review.objects.create(**validated_data)
